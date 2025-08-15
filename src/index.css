@@ -1,0 +1,46 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --light-theme-color-text: #242424;
+  --light-theme-color-bg: #ffffff;
+  --dark-theme-color-text: #ffffff;
+  --dark-theme-color-bg: #242424;
+
+  color-scheme: dark light;
+  color: var(--dark-theme-color-text);
+  background-color: var(--dark-theme-color-bg);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--light-theme-color-text);
+    background-color: var(--light-theme-color-bg);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

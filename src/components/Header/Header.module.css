@@ -1,0 +1,51 @@
+:root {
+  --light-theme-header-color-text: #242424;
+  --light-theme-header-color-bg: #ffffff;
+  --dark-theme-header-color-text: #ffffff;
+  --dark-theme-header-color-bg: #242424;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+  display: flex;
+  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+
+  color-scheme: dark light;
+  color: var(--dark-theme-header-color-text);
+  background-color: var(--dark-theme-header-color-bg);
+  box-shadow: 0 8px 16px #343434;
+}
+
+@media (prefers-color-scheme: light) {
+  .header {
+    color: var(--light-theme-header-color-text);
+    background-color: var(--light-theme-header-color-bg);
+    box-shadow: 0 8px 16px #efefef;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
