@@ -1,0 +1,5 @@
+.wrap {
+  display: grid;
+  place-items: center;
+  padding: 24px 0 12px;
+}

@@ -1,46 +1,47 @@
+@import 'modern-normalize/modern-normalize.css';
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  --light-theme-color-text: #242424;
-  --light-theme-color-bg: #ffffff;
-  --dark-theme-color-text: #ffffff;
-  --dark-theme-color-bg: #242424;
+  --light-theme-header-color-text: rgb(36, 36, 36);
+  --light-theme-header-color-bg: rgb(255, 255, 255);
+  --light-theme-header-box-shadow: 0 4px 8px rgb(230, 230, 230);
+
+  --dark-theme-header-color-text: rgb(255, 255, 255);
+  --dark-theme-header-color-bg: rgb(36, 36, 36);
+  --dark-theme-header-box-shadow: 0 4px 8px rgb(50, 50, 50);
+
+  --light-theme-color-text: rgb(36, 36, 36);
+  --light-theme-color-bg: rgb(255, 255, 255);
+  --light-theme-card-hover: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+
+  --dark-theme-color-text: rgb(255, 255, 255);
+  --dark-theme-color-bg: rgb(36, 36, 36);
+  --dark-theme-card-hover: 0px 0px 8px 4px rgb(255, 255, 255, 0.5);
 
   color-scheme: dark light;
-  color: var(--dark-theme-color-text);
-  background-color: var(--dark-theme-color-bg);
+  color: var(--light-theme-color-text);
+  background-color: var(--light-theme-color-bg);
   transition: background-color 0.5s, color 0.5s;
+
+  --gap: 16px;
+  --radius: 14px;
+  --radius-ring: 50px;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: var(--light-theme-color-text);
-    background-color: var(--light-theme-color-bg);
+    color: var(--dark-theme-color-text);
+    background-color: var(--dark-theme-color-bg);
   }
 }
 
-body {
-  margin: 0;
+.main {
+  padding-top: 60px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
+html {
+  scroll-behavior: smooth;
 }

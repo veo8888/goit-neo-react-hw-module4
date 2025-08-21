@@ -1,0 +1,19 @@
+.wrap {
+  display: grid;
+  place-items: center;
+  margin-top: 16px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: var(--radius-ring);
+  background: royalblue;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  filter: brightness(1.3);
+}

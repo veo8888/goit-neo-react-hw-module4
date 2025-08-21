@@ -1,13 +1,12 @@
-.conteiner {
-  margin: 80px 0;
-
-  text-align: center;
-  font-size: 20px;
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px var(--gap);
 }
 
-hr {
-  width: 50%;
-  height: 1px;
-  border: none;
-  background-color: blue;
+.info {
+  margin: 24px 0;
+  text-align: center;
+  color: rgb(100, 100, 100);
+  font-size: 14px;
 }

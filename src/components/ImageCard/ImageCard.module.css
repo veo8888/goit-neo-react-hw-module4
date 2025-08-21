@@ -1,0 +1,50 @@
+.card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--light-theme-card-hover);
+  outline: 1px solid;
+  outline-offset: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--dark-theme-card-hover);
+  }
+}
+
+.thumb {
+  aspect-ratio: 16 / 10;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meta {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: rgb(50, 50, 50);
+  background: rgb(200, 200, 200);
+}
+
+.label {
+  color: rgb(100, 100, 100);
+  margin-right: 6px;
+}

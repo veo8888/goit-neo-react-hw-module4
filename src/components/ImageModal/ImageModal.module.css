@@ -1,0 +1,61 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: grid;
+  place-items: center;
+  padding-top: 60px;
+}
+
+.content {
+  position: relative;
+  max-width: min(1200px, 94vw);
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.stage {
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  align-items: center;
+}
+
+.image {
+  max-height: calc(100vh - 200px);
+  width: 100%;
+  object-fit: contain;
+  border-radius: var(--radius);
+  /* background: rgb(50, 50, 50); */
+}
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-ring);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: rgb(24, 24, 24);
+  color: white;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-ring);
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  background: rgb(24, 24, 24);
+  color: white;
+}
